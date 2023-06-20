@@ -1,0 +1,32 @@
+.commentsForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.commentsForm textarea {
+  width: 60%;
+  height: 100px;
+  resize: vertical;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 8px;
+}
+
+.commentsForm button {
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  background: #409d36;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 50px;
+}
