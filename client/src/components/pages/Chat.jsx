@@ -12,6 +12,13 @@ export const Chat = () => {
   const [commentText, setCommentText] = useState("");
 
   useEffect(() => {
+    const storedCommentText = localStorage.getItem("commentText");
+    if (storedCommentText) {
+      setCommentText(storedCommentText);
+    }
+  }, []);
+
+  useEffect(() => {
     const searchParams = Object.fromEntries(new URLSearchParams(search));
     setuserParams(searchParams);
     socket.emit("join", searchParams);
